@@ -14,8 +14,12 @@ N[N > 3] <- 2
 N #semua elemen yang lebih besar dari 3 diinput ulang atau diubah menjadi angka 2
 
 #final exercise
-#1-3
-G <- matrix(data = c(1:100), 10, 10, TRUE)
+#2
+values <- sample(c(1:1000), 100, replace =  FALSE)
+values
+
+#3
+G <- matrix(data = c(values), 10, 10, TRUE)
 G
 
 #4.1
@@ -38,12 +42,3 @@ K
 #4.5
 G
 G %% solve(G)
-
-R <- G %% solve(G)
-
-solve(G)
-
-D <- solve(G)
-
-#selalu error saat mencari invers G
-
